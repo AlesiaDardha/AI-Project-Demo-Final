@@ -483,7 +483,7 @@ def compute_metrics(threshold: float, cache_buster: tuple) -> pd.DataFrame:
 
     return pd.DataFrame(
         {
-            "Model": ["Rule-Based", "Random Forest (tuned)", "Hybrid Sequential (rules-first)"],
+            "Model": ["Rule-Based", "Random Forest", "Hybrid Sequential (rules-first)"],
             "ROC-AUC": ["N/A", rf_auc, hy_auc],
             "Precision": [rb_precision, rf_precision, hy_precision],
             "Recall": [rb_recall, rf_recall, hy_recall],
